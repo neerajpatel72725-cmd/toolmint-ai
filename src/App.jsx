@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="container">
       <h1>🚀 ToolMint AI</h1>
+
       <p>Discover the Best AI Tools in One Place</p>
 
       <input
@@ -30,6 +31,20 @@ function App() {
         {categories.map((item) => (
           <button key={item}>{item}</button>
         ))}
+      </div>
+
+      <div
+        style={{
+          background: "#2563eb",
+          padding: "25px",
+          borderRadius: "15px",
+          marginBottom: "30px",
+          textAlign: "center"
+        }}
+      >
+        <h2>🔥 Featured Tool</h2>
+        <h3>ChatGPT</h3>
+        <p>The world's most popular AI assistant.</p>
       </div>
 
       <div className="grid">
