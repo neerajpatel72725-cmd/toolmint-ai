@@ -1,62 +1,43 @@
-const categories = [
-  "Image AI",
-  "Video AI",
-  "Writing AI",
-  "Coding AI",
-  "Marketing AI"
-];
+import { useState } from "react";
 
 const tools = [
-  { name: "ChatGPT", desc: "AI Chat Assistant" },
-  { name: "Canva AI", desc: "AI Design Tool" },
-  { name: "Leonardo AI", desc: "AI Image Generator" },
-  { name: "ElevenLabs", desc: "AI Voice Generator" },
-  { name: "Claude", desc: "AI Writing Assistant" },
-  { name: "Perplexity", desc: "AI Search Engine" }
+  { name: "ChatGPT", category: "Writing AI" },
+  { name: "Canva AI", category: "Image AI" },
+  { name: "Leonardo AI", category: "Image AI" },
+  { name: "Claude", category: "Writing AI" },
+  { name: "Perplexity", category: "Research AI" },
+  { name: "ElevenLabs", category: "Voice AI" }
 ];
 
-function App() {
+export default function App() {
+  const [search, setSearch] = useState("");
+
+  const filtered = tools.filter(tool =>
+    tool.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="container">
       <h1>🚀 ToolMint AI</h1>
 
-      <p>Discover the Best AI Tools in One Place</p>
+      <p>Find the best AI tools in one place.</p>
 
       <input
         className="search"
+        type="text"
         placeholder="Search AI tools..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
       />
 
-      <div className="categories">
-        {categories.map((item) => (
-          <button key={item}>{item}</button>
-        ))}
-      </div>
-
-      <div
-        style={{
-          background: "#2563eb",
-          padding: "25px",
-          borderRadius: "15px",
-          marginBottom: "30px",
-          textAlign: "center"
-        }}
-      >
-        <h2>🔥 Featured Tool</h2>
-        <h3>ChatGPT</h3>
-        <p>The world's most popular AI assistant.</p>
-      </div>
-
       <div className="grid">
-        {tools.map((tool) => (
+        {filtered.map((tool) => (
           <div className="card" key={tool.name}>
             <h2>{tool.name}</h2>
-            <p>{tool.desc}</p>
+            <p>{tool.category}</p>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
-export default App;
