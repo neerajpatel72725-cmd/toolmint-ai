@@ -17,27 +17,39 @@ export default function App() {
   );
 
   return (
-    <div className="container">
-      <h1>🚀 ToolMint AI</h1>
+    <>
+      <nav className="navbar">
+        <h2>🚀 ToolMint AI</h2>
 
-      <p>Find the best AI tools in one place.</p>
+        <div className="menu">
+          <a href="#">Home</a>
+          <a href="#">Tools</a>
+          <a href="#">Categories</a>
+          <a href="#">About</a>
+        </div>
+      </nav>
 
-      <input
-        className="search"
-        type="text"
-        placeholder="Search AI tools..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <div className="container">
+        <h1>Discover the Best AI Tools</h1>
 
-      <div className="grid">
-        {filtered.map((tool) => (
-          <div className="card" key={tool.name}>
-            <h2>{tool.name}</h2>
-            <p>{tool.category}</p>
-          </div>
-        ))}
+        <p>Find powerful AI tools for free.</p>
+
+        <input
+          className="search"
+          placeholder="Search AI tools..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+
+        <div className="grid">
+          {filtered.map((tool) => (
+            <div className="card" key={tool.name}>
+              <h2>{tool.name}</h2>
+              <p>{tool.category}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
