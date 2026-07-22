@@ -1,20 +1,18 @@
+const categories = [
+  "Image AI",
+  "Video AI",
+  "Writing AI",
+  "Coding AI",
+  "Marketing AI"
+];
+
 const tools = [
-  {
-    name: "AI Image Generator",
-    desc: "Create stunning AI images in seconds."
-  },
-  {
-    name: "YouTube Title Generator",
-    desc: "Generate viral YouTube titles."
-  },
-  {
-    name: "Instagram Caption AI",
-    desc: "Write engaging Instagram captions."
-  },
-  {
-    name: "Logo Maker AI",
-    desc: "Create beautiful logos instantly."
-  }
+  { name: "ChatGPT", desc: "AI Chat Assistant" },
+  { name: "Canva AI", desc: "AI Design Tool" },
+  { name: "Leonardo AI", desc: "AI Image Generator" },
+  { name: "ElevenLabs", desc: "AI Voice Generator" },
+  { name: "Claude", desc: "AI Writing Assistant" },
+  { name: "Perplexity", desc: "AI Search Engine" }
 ];
 
 function App() {
@@ -24,34 +22,24 @@ function App() {
       <p>Discover the Best AI Tools in One Place</p>
 
       <input
-        type="text"
+        className="search"
         placeholder="Search AI tools..."
-        style={{
-          padding: "12px",
-          width: "300px",
-          maxWidth: "90%",
-          borderRadius: "10px",
-          border: "none",
-          marginBottom: "30px"
-        }}
       />
 
-      {tools.map((tool, index) => (
-        <div
-          key={index}
-          style={{
-            background: "#1e293b",
-            padding: "20px",
-            margin: "15px auto",
-            borderRadius: "12px",
-            maxWidth: "500px",
-            textAlign: "left"
-          }}
-        >
-          <h2>{tool.name}</h2>
-          <p>{tool.desc}</p>
-        </div>
-      ))}
+      <div className="categories">
+        {categories.map((item) => (
+          <button key={item}>{item}</button>
+        ))}
+      </div>
+
+      <div className="grid">
+        {tools.map((tool) => (
+          <div className="card" key={tool.name}>
+            <h2>{tool.name}</h2>
+            <p>{tool.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
