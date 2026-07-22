@@ -2,8 +2,7 @@ function App() {
   return (
     <div className="container">
       <h1>🚀 ToolMint AI</h1>
-      <p>Welcome to the Future of AI Tools</p>
-
+      <p>Create YouTube Thumbnails, Instagram Posts, Logos, AI Tools and much more.</p>
       <button>Explore Tools</button>
     </div>
   );
