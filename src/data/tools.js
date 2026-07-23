@@ -1,6 +1,7 @@
 const tools = [
   {
     description: "AI search engine for fast and  accurate answers.",
+    rating: "4.9",
     name: "Perplexity",
     category: "Research AI",
     type: "Free",
