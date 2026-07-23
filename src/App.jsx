@@ -1,7 +1,6 @@
 import { useState } from "react";
+import tools from "./data/tools";
 
-const tools = [
-  {
     name: "ChatGPT",
     category: "Writing AI",
     type: "Free + Paid",
