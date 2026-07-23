@@ -10,7 +10,8 @@ const tools = [
   {
     name: "Gemini",
     category: "Writing AI",
-    description: "Google AI assistant for writing       and coding.",    
+    description: "Google AI assistant for writing       and coding.",
+    rating: "4.8",    
 type: "Free",
     link: "https://gemini.google.com"
   },
