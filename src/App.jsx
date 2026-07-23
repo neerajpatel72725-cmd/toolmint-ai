@@ -58,6 +58,7 @@ const [category, setCategory] = useState("All");
           {filtered.map((tool) => (
             <div className="card" key={tool.name}>
               <h2>{tool.name}</h2>
+              <p>⭐ {tool.rating}</p>
 
               <p>{tool.category}</p>
               <p   className="description">{tool.description}</p>
