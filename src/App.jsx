@@ -4,31 +4,37 @@ const tools = [
   {
     name: "ChatGPT",
     category: "Writing AI",
+    type: "Free + Paid",
     link: "https://chatgpt.com"
   },
   {
     name: "Claude",
     category: "Writing AI",
+    type: "Free",
     link: "https://claude.ai"
   },
   {
     name: "Canva AI",
     category: "Design AI",
+    type: "Free + Paid",
     link: "https://canva.com"
   },
   {
     name: "Leonardo AI",
     category: "Image AI",
+    type: "Free",
     link: "https://leonardo.ai"
   },
   {
     name: "Perplexity",
     category: "Research AI",
+    type: "Free",
     link: "https://perplexity.ai"
   },
   {
     name: "ElevenLabs",
     category: "Voice AI",
+    type: "Paid",
     link: "https://elevenlabs.io"
   }
 ];
@@ -36,7 +42,7 @@ const tools = [
 export default function App() {
   const [search, setSearch] = useState("");
 
-  const filtered = tools.filter((tool) =>
+  const filtered = tools.filter(tool =>
     tool.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -55,9 +61,9 @@ export default function App() {
 
       <div className="container">
 
-        <h1>Discover The Best AI Tools</h1>
+        <h1>Find the Best AI Tools</h1>
 
-        <p>Find powerful AI tools in one place.</p>
+        <p>Discover powerful AI tools in one place.</p>
 
         <input
           className="search"
@@ -69,9 +75,14 @@ export default function App() {
         <div className="grid">
           {filtered.map((tool)=>(
             <div className="card" key={tool.name}>
+
               <h2>{tool.name}</h2>
 
               <p>{tool.category}</p>
+
+              <strong>{tool.type}</strong>
+
+              <br /><br />
 
               <a
                 href={tool.link}
@@ -79,7 +90,7 @@ export default function App() {
                 rel="noreferrer"
               >
                 <button className="btn">
-                  Visit Official Website
+                  Visit Tool
                 </button>
               </a>
 
