@@ -1,5 +1,5 @@
 import { useState } from "react";
-import tools from "./data/tools";
+import tools from "./data/tools";  
 
     name: "ChatGPT",
     category: "Writing AI",
