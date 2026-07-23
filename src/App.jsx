@@ -9,7 +9,6 @@ const [category, setCategory] = useState("All");
   const matchSearch = tool.name
     .toLowerCase() 
     .includes(search.toLowerCase());
-
   const matchCategory =
     category === "All" || tool.category === category;
 
@@ -32,6 +31,7 @@ const [category, setCategory] = useState("All");
         <h1>Find the Best AI Tools</h1>
 
         <p>Discover powerful AI tools in one place.</p>
+<p><strong>{filtered.length}</strong> AI Tools Found</p>
 
         <input
           className="search"
