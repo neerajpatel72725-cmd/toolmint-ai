@@ -3,11 +3,18 @@ import tools from "./data/tools";
 
 export default function App() {
   const [search, setSearch] = useState("");
+const [category, setCategory] = useState("All");
 
-  const filtered = tools.filter((tool) =>
-    tool.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filtered = tools.filter(tool => {
+  const matchSearch = tool.name
+    .toLowerCase() 
+    .includes(search.toLowerCase());
 
+  const matchCategory =
+    category === "All" || tool.category === category;
+
+  return matchSearch && matchCategory;
+});
   return (
     <>
       <nav className="navbar">
@@ -32,6 +39,20 @@ export default function App() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
+<select
+  className="search"
+  value={category}
+  onChange={(e) => setCategory(e.target.value)}
+>
+  <option>All</option>
+  <option>Writing AI</option>
+  <option>Image AI</option>
+  <option>Design AI</option>
+  <option>Research AI</option>
+  <option>Coding AI</option>
+  <option>Voice AI</option>
+  <option>Video AI</option>
+</select>
 
         <div className="grid">
           {filtered.map((tool) => (
