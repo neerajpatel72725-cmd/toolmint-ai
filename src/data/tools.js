@@ -2,32 +2,26 @@ const tools = [
   {
     name: "ChatGPT",
     category: "Writing AI",
+    type: "Free + Paid",
     link: "https://chatgpt.com"
   },
   {
     name: "Claude",
     category: "Writing AI",
+    type: "Free",
     link: "https://claude.ai"
   },
   {
     name: "Canva AI",
     category: "Design AI",
+    type: "Free + Paid",
     link: "https://canva.com"
   },
   {
     name: "Leonardo AI",
     category: "Image AI",
+    type: "Free",
     link: "https://leonardo.ai"
-  },
-  {
-    name: "Perplexity",
-    category: "Research AI",
-    link: "https://perplexity.ai"
-  },
-  {
-    name: "ElevenLabs",
-    category: "Voice AI",
-    link: "https://elevenlabs.io"
   }
 ];
 
