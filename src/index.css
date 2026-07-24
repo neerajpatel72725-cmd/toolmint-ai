@@ -121,10 +121,7 @@ font-size:32px;
   margin:0;
 }
 
-.featured{
-  border:2px solid gold;
-  box-shadow:0 0 15px rgba(255,215,0,0.4);
-}
+
 .categories{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
