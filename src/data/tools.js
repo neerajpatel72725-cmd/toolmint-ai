@@ -39,7 +39,8 @@ logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
     category: "Coding AI",
     description: "AI-powered code editor for developers.",
     type: "Free + Paid",
-    link: "https://cursor.com"
+    link: "https://cursor.com",
+    logo: "https://www.google.com/s2/favicons?sz=64&domain=cursor.com"
   },
   {
     name: "ElevenLabs",
