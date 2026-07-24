@@ -61,12 +61,12 @@ const [category, setCategory] = useState("All");
         <img src={tool.logo} alt={tool.name} width="40" />
   <h2>{tool.name}</h2>
 </div>
-              <p>⭐ {tool.rating}</p>
+              <div className="badges">
+              <span>⭐ {tool.rating}</span>
+              <span>{tool.type}</span>
+              </div>
 
               <p>{tool.category}</p>
-              <p   className="description">{tool.description}</p>
-
-              <strong>{tool.type}</strong>
 
               <br />
               <br />
