@@ -79,12 +79,7 @@ const [category, setCategory] = useState("All");
   <option>Video AI</option>
 </select>
 
-        <div className="grid">
-          {filtered.map((tool) => (
-            <div
-  className={`card ${tool.name === "Perplexity" ? "featured" : ""}`}
-  key={tool.name}
->
+        <div className="card" key={tool.name}>
             <div className="tool-header">
         <img src={tool.logo} alt={tool.name} width="40" />
   <h2>{tool.name}</h2>
