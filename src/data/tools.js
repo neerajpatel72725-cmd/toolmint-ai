@@ -49,7 +49,59 @@ logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
     type: "Free + Paid",
     link: "https://elevenlabs.io",
     logo: "https://www.google.com/s2/favicons?sz=64&domain=elevenlabs.io"
-  }
-];
+  },
 
+{
+  name: "TubeBuddy",
+  category: "YouTube AI",
+  description: "SEO, keyword research and channel optimization for YouTube.",
+  rating: "4.8",
+  type: "Free + Paid",
+  link: "https://www.tubebuddy.com",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=tubebuddy.com"
+},
+{
+  name: "vidIQ",
+  category: "YouTube AI",
+  description: "AI-powered YouTube analytics and keyword research.",
+  rating: "4.8",
+  type: "Free + Paid",
+  link: "https://vidiq.com",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=vidiq.com"
+},
+{
+  name: "Opus Clip",
+  category: "Video AI",
+  description: "Turn long videos into viral shorts using AI.",
+  rating: "4.9",
+  type: "Free + Paid",
+  link: "https://www.opus.pro",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=opus.pro"
+},
+{
+  name: "Submagic",
+  category: "Video AI",
+  description: "Generate stylish AI captions for Shorts and Reels.",
+  rating: "4.8",
+  type: "Free + Paid",
+  link: "https://www.submagic.co",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=submagic.co"
+},
+{
+  name: "Thumbly",
+  category: "YouTube AI",
+  description: "AI-powered thumbnail analysis and optimization.",
+  rating: "4.7",
+  type: "Paid",
+  link: "https://thumbly.ai",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=thumbly.ai"
+}
+type: "Paid",
+  link: "https://thumbly.ai",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=thumbly.ai"
+}
+
+];
 export default tools;
+
+
