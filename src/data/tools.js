@@ -31,7 +31,8 @@ logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
     category: "Video AI",
     description: "AI video editing and generation platform.",
     type: "Free + Paid",
-    link: "https://runwayml.com"
+    link: "https://runwayml.com",
+    logo:     "https://www.google.com/s2/favicons?sz=64&domain=runwayml.com"
   },
   {
     name: "Cursor",
