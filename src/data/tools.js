@@ -23,7 +23,8 @@ type: "Free",
     category: "Image AI",
     description: "Create high-quality AI images from text prompts.",
     type: "Paid",
-    link: "https://midjourney.com"
+    link: "https://midjourney.com",
+logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
   },
   {
     name: "Runway",
