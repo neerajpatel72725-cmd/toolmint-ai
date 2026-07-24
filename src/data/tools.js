@@ -96,7 +96,51 @@ logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
   link: "https://thumbly.ai",
   logo: "https://www.google.com/s2/favicons?sz=64&domain=thumbly.ai"
 }
-
+{
+  name: "Canva AI",
+  category: "Design AI",
+  description: "Create posters, social media posts and presentations with AI.",
+  rating: "4.9",
+  type: "Free + Paid",
+  link: "https://www.canva.com",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=canva.com"
+},
+{
+  name: "Adobe Firefly",
+  category: "Design AI",
+  description: "Generate AI images and creative artwork with Adobe.",
+  rating: "4.8",
+  type: "Free + Paid",
+  link: "https://firefly.adobe.com",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=firefly.adobe.com"
+},
+{
+  name: "Ideogram",
+  category: "Image AI",
+  description: "Create AI images with accurate text generation.",
+  rating: "4.8",
+  type: "Free + Paid",
+  link: "https://ideogram.ai",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=ideogram.ai"
+},
+{
+  name: "Leonardo AI",
+  category: "Image AI",
+  description: "Generate professional AI artwork, game assets and illustrations.",
+  rating: "4.8",
+  type: "Free + Paid",
+  link: "https://leonardo.ai",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=leonardo.ai"
+},
+{
+  name: "Krea AI",
+  category: "Design AI",
+  description: "Real-time AI image generation and enhancement.",
+  rating: "4.7",
+  type: "Free + Paid",
+  link: "https://www.krea.ai",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=krea.ai"
+},
 
 ];
 export default tools;
