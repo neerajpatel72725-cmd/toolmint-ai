@@ -5,7 +5,7 @@ const tools = [
     name: "Perplexity",
     category: "Research AI",
     type: "Free",
-    link: "https://perplexity.ai"
+    link: "https://perplexity.ai",
  logo: "https://www.google.com/s2/favicons?sz=64&domain=perplexity.ai"
   },
    
