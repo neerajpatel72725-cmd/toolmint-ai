@@ -70,6 +70,7 @@ const [category, setCategory] = useState("All");
               </div>
 
               <p>{tool.category}</p>
+              <p className="description">{tool.description}</p>
 
               <br />
               <br />
