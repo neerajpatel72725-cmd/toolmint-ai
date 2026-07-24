@@ -47,7 +47,8 @@ logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
     category: "Voice AI",
     description: "Realistic AI voice generation platform.",
     type: "Free + Paid",
-    link: "https://elevenlabs.io"
+    link: "https://elevenlabs.io",
+    logo: "https://www.google.com/s2/favicons?sz=64&domain=elevenlabs.io"
   }
 ];
 
