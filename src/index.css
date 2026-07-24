@@ -109,3 +109,13 @@ transition:0.3s;
 .btn:hover{
 background:#1d4ed8;
 }
+.tool-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.tool-header h2{
+  margin:0;
+}
