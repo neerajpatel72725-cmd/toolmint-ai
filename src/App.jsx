@@ -105,7 +105,6 @@ const [category, setCategory] = useState("All");
             </div>
           ))}
         </div>
-      </div>
     </>
   );
 }
