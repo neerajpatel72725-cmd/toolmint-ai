@@ -57,8 +57,10 @@ const [category, setCategory] = useState("All");
         <div className="grid">
           {filtered.map((tool) => (
             <div className="card" key={tool.name}>
-            <img src={tool.logo} alt={tool.name} width="40" />
-              <h2>{tool.name}</h2>
+            <div className="tool-header">
+        <img src={tool.logo} alt={tool.name} width="40" />
+  <h2>{tool.name}</h2>
+</div>
               <p>⭐ {tool.rating}</p>
 
               <p>{tool.category}</p>
