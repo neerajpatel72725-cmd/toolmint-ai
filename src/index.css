@@ -123,7 +123,11 @@ background:#1d4ed8;
   gap:10px;
   margin-bottom:10px;
 }
-
 .tool-header h2{
   margin:0;
+}
+
+.featured{
+  border:2px solid gold;
+  box-shadow:0 0 15px rgba(255,215,0,0.4);
 }
