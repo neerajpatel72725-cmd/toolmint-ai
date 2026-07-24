@@ -69,6 +69,9 @@ padding:20px;
 border-radius:15px;
 transition:.3s;
 }
+.card:hover{
+transform:translateY(-5px);
+}
 
 .card:hover{
 transform:translateY(-5px);
