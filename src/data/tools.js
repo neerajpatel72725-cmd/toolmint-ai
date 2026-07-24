@@ -95,7 +95,7 @@ logo: "https://www.google.com/s2/favicons?sz=64&domain=midjourney.com"
   type: "Paid",
   link: "https://thumbly.ai",
   logo: "https://www.google.com/s2/favicons?sz=64&domain=thumbly.ai"
-}
+},
 {
   name: "Canva AI",
   category: "Design AI",
