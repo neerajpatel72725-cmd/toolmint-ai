@@ -131,3 +131,25 @@ background:#1d4ed8;
   border:2px solid gold;
   box-shadow:0 0 15px rgba(255,215,0,0.4);
 }
+.categories{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:15px;
+  margin:30px 0;
+}
+
+.category-card{
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.category-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
