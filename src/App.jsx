@@ -32,6 +32,14 @@ const [category, setCategory] = useState("All");
 
         <p>Discover powerful AI tools in one place.</p>
 <p><strong>{filtered.length}</strong> AI Tools Found</p>
+<div className="categories">
+  <div className="category-card">🎥 YouTube Creator</div>
+  <div className="category-card">🎨 Design AI</div>
+  <div className="category-card">🤖 ChatGPT</div>
+  <div className="category-card">💻 Coding AI</div>
+  <div className="category-card">🎬 Video AI</div>
+  <div className="category-card">🎤 Voice AI</div>
+</div>
 
         <input
           className="search"
