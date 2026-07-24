@@ -15,8 +15,9 @@ const tools = [
     description: "Google AI assistant for writing       and coding.",
     rating: "4.8",    
 type: "Free",
-    link: "https://gemini.google.com"
-  },
+    link: "https://gemini.google.com",
+  logo: "https://www.google.com/s2/favicons?sz=64&domain=gemini.google.com"
+},
   {
     name: "Midjourney",
     category: "Image AI",
