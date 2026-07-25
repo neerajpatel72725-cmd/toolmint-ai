@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <h3>🚀 ToolMint AI</h3>
+      <h3>🚀 GENORA AI</h3>
 
       <p>
         Discover the best AI tools for creators,
