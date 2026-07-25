@@ -3,7 +3,7 @@ export default function Navbar() {
     <nav className="navbar">
       <h2>🚀 GENORA AI</h2>
 
-      <div className="menu">
+       <div className="menu">
         <a href="#">Home</a>
         <a href="#">Trending</a>
         <a href="#">Categories</a>
