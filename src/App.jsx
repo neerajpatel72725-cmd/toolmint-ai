@@ -26,7 +26,7 @@ export default function App() {
   return (
     <>
       <nav className="navbar">
-        <h2>🚀 ToolMint AI</h2>
+        <h2>🚀 GENORA AI</h2>
 
         <div className="menu">
           <a href="#">Home</a>
