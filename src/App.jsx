@@ -1,5 +1,6 @@
 import { useState } from "react";
 import tools from "./data/tools";
+import Hero from "./components/Hero";
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -31,33 +32,8 @@ const [category, setCategory] = useState("All");
         <h1>Find the Best AI Tools</h1>
 
         <p>Discover powerful AI tools in one place.</p>
-<p><strong>{filtered.length}</strong> AI Tools Found</p>
-<div className="hero">
-  <h2>🚀 AI Tools for Creators</h2>
 
-  <p>
-    Discover the best AI tools for YouTube, Instagram,
-    Thumbnails, Posters, Video Editing and Coding.
-  </p>
-
-  <button className="btn">
-    Explore AI Tools
-  </button>
-</div>
-<div className="hero">
-  <h2>💡 Why ToolMint?</h2>
-
-  <p>
-    Save hours by discovering the best AI tools for content creation,
-    design, coding, research and productivity — all in one place.
-  </p>
-
-  <div className="badges">
-    <span>⚡ Fast Search</span>
-    <span>🔥 Trending Tools</span>
-    <span>🎯 Creator Friendly</span>
-  </div>
-</div>
+<Hero totalTools={filtered.length} />
 <div className="featured-tool">
   <h2>🔥 Featured AI Tool</h2>
 
