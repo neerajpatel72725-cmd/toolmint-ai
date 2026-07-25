@@ -6,6 +6,7 @@ import FeaturedTool from "./components/FeaturedTool";
 import Categories from "./components/Categories";
 import SearchBar from "./components/SearchBar";
 import ToolCard from "./components/ToolCard";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -64,6 +65,8 @@ export default function App() {
             />
           ))}
         </div>
+
+        <Footer />
       </div>
     </>
   );
