@@ -13,7 +13,7 @@ export default function Hero({ totalTools }) {
       </div>
 
       <div className="hero">
-        <h2>💡 Why ToolMint?</h2>
+        <h2>💡 Why GENORA AI?</h2>
 
         <p>
           Save hours by discovering the best AI tools for content creation,
