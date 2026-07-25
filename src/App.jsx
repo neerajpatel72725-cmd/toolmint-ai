@@ -1,6 +1,8 @@
 import { useState } from "react";
 import tools from "./data/tools";
 import Hero from "./components/Hero";
+import FeaturedTool from "./components/FeaturedTool";
+import Categories from "./components/Categories";
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -34,35 +36,9 @@ const [category, setCategory] = useState("All");
         <p>Discover powerful AI tools in one place.</p>
 
 <Hero totalTools={filtered.length} />
-<div className="featured-tool">
-  <h2>🔥 Featured AI Tool</h2>
 
-  <div className="tool-header">
-    <img
-      src="https://www.google.com/s2/favicons?sz=64&domain=chatgpt.com"
-      alt="ChatGPT"
-      width="40"
-    />
-
-    <div>
-      <h3>ChatGPT</h3>
-      <p>Best AI Assistant for Creators</p>
-    </div>
-  </div>
-
-  <div className="badges">
-    <span>⭐ 4.9</span>
-    <span>Free + Paid</span>
-  </div>
-
-  <a
-    href="https://chatgpt.com"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <button className="btn">Try Now</button>
-  </a>
-</div>
+<FeaturedTool />
+     
 <div className="categories">
   <div className="category-card" onClick={() => setCategory("YouTube AI")}>
     🎥 YouTube Creator
