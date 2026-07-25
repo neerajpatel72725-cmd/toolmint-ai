@@ -15,8 +15,8 @@ export default function Footer() {
       </div>
 
       <p className="copyright">
-        © 2026 ToolMint AI • Made with ❤️ by Neeraj
-      </p>
+        © 2026 ToolMint AI • Made with a crazy person 
+</p>
     </footer>
   );
 }
