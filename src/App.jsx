@@ -32,6 +32,18 @@ const [category, setCategory] = useState("All");
 
         <p>Discover powerful AI tools in one place.</p>
 <p><strong>{filtered.length}</strong> AI Tools Found</p>
+<div className="hero">
+  <h2>🚀 AI Tools for Creators</h2>
+
+  <p>
+    Discover the best AI tools for YouTube, Instagram,
+    Thumbnails, Posters, Video Editing and Coding.
+  </p>
+
+  <button className="btn">
+    Explore AI Tools
+  </button>
+</div>
 <div className="categories">
   <div className="category-card" onClick={() => setCategory("YouTube AI")}>
     🎥 YouTube Creator
