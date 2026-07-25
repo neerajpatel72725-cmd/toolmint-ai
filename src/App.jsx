@@ -1,22 +1,27 @@
 import { useState } from "react";
 import tools from "./data/tools";
+
 import Hero from "./components/Hero";
 import FeaturedTool from "./components/FeaturedTool";
 import Categories from "./components/Categories";
+import SearchBar from "./components/SearchBar";
+import ToolCard from "./components/ToolCard";
 
 export default function App() {
   const [search, setSearch] = useState("");
-const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("All");
 
-  const filtered = tools.filter(tool => {
-  const matchSearch = tool.name
-    .toLowerCase() 
-    .includes(search.toLowerCase());
-  const matchCategory =
-    category === "All" || tool.category === category;
+  const filtered = tools.filter((tool) => {
+    const matchSearch = tool.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
 
-  return matchSearch && matchCategory;
-});
+    const matchCategory =
+      category === "All" || tool.category === category;
+
+    return matchSearch && matchCategory;
+  });
+
   return (
     <>
       <nav className="navbar">
@@ -35,89 +40,31 @@ const [category, setCategory] = useState("All");
 
         <p>Discover powerful AI tools in one place.</p>
 
-<Hero totalTools={filtered.length} />
+        <Hero totalTools={filtered.length} />
 
-<FeaturedTool />
-     
-<div className="categories">
-  <div className="category-card" onClick={() => setCategory("YouTube AI")}>
-    🎥 YouTube Creator
-  </div>
+        <FeaturedTool />
 
-  <div className="category-card" onClick={() => setCategory("Design AI")}>
-    🎨 Design AI
-  </div>
-
-  <div className="category-card" onClick={() => setSearch("ChatGPT")}>
-    🤖 ChatGPT
-  </div>
-
-  <div className="category-card" onClick={() => setCategory("Coding AI")}>
-    💻 Coding AI
-  </div>
-
-  <div className="category-card" onClick={() => setCategory("Video AI")}>
-    🎬 Video AI
-  </div>
-
-  <div className="category-card" onClick={() => setCategory("Voice AI")}>
-    🎤 Voice AI
-  </div>
-</div>
-
-        <input
-          className="search"
-          placeholder="Search AI tools..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
+        <Categories
+          setCategory={setCategory}
+          setSearch={setSearch}
         />
-<select
-  className="search"
-  value={category}
-  onChange={(e) => setCategory(e.target.value)}
->
-  <option>All</option>
-  <option>Writing AI</option>
-  <option>Image AI</option>
-  <option>Design AI</option>
-  <option>Research AI</option>
-  <option>Coding AI</option>
-  <option>Voice AI</option>
-  <option>Video AI</option>
-</select>
 
-     <div className="grid">
-  {filtered.map((tool) => (
-    <div className="card" key={tool.name}>
-      <div className="tool-header">
-        <img src={tool.logo} alt={tool.name} width="40" />
-        <h2>{tool.name}</h2>
-      </div>
+        <SearchBar
+          search={search}
+          setSearch={setSearch}
+          category={category}
+          setCategory={setCategory}
+        />
 
-      <div className="badges">
-        <span>⭐ {tool.rating}</span>
-        <span>{tool.type}</span>
-      </div>
-
-      <p>{tool.category}</p>
-      <p className="description">{tool.description}</p>
-
-      <br />
-      <br />
-
-      <a
-        href={tool.link}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <button className="btn">Visit Tool</button>
-      </a>
-    </div>
-  ))}
-</div>
-
+        <div className="grid">
+          {filtered.map((tool) => (
+            <ToolCard
+              key={tool.name}
+              tool={tool}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
 }
-        
