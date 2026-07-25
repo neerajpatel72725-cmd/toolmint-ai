@@ -44,6 +44,20 @@ const [category, setCategory] = useState("All");
     Explore AI Tools
   </button>
 </div>
+<div className="hero">
+  <h2>💡 Why ToolMint?</h2>
+
+  <p>
+    Save hours by discovering the best AI tools for content creation,
+    design, coding, research and productivity — all in one place.
+  </p>
+
+  <div className="badges">
+    <span>⚡ Fast Search</span>
+    <span>🔥 Trending Tools</span>
+    <span>🎯 Creator Friendly</span>
+  </div>
+</div>
 <div className="categories">
   <div className="category-card" onClick={() => setCategory("YouTube AI")}>
     🎥 YouTube Creator
