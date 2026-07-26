@@ -2,7 +2,7 @@ import { useState } from "react";
 import tools from "./data/tools";
 
 import Hero from "./components/Hero";
-import FeaturedTool from "./components/FeaturedTool";
+
 import Categories from "./components/Categories";
 import SearchBar from "./components/SearchBar";
 import ToolCard from "./components/ToolCard";
@@ -41,8 +41,7 @@ export default function App() {
 
         <Hero totalTools={filtered.length} />
 
-        <FeaturedTool />
-
+        
         <Categories
           setCategory={setCategory}
           setSearch={setSearch}
