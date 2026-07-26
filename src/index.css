@@ -369,7 +369,8 @@ font-size:32px;
 .featured-info h2{
   font-size:26px;
 }
-}
+
+
 /* ===== PREMIUM NAVBAR ===== */
 
 .navbar{
@@ -500,4 +501,43 @@ font-size:32px;
 
 .card .btn{
   width:100%;
+}
+
+/* ===== SEARCH BAR ===== */
+
+.search-wrapper{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:16px;
+  margin:30px 0;
+}
+
+.search{
+  width:100%;
+  padding:16px 18px;
+  border:none;
+  border-radius:14px;
+  background:#1e293b;
+  color:#fff;
+  border:1px solid #334155;
+  font-size:16px;
+  outline:none;
+  transition:.3s;
+}
+
+.search:focus{
+  border-color:#38bdf8;
+  box-shadow:0 0 0 3px rgba(56,189,248,.15);
+}
+
+.category-select{
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.search-wrapper{
+  grid-template-columns:1fr;
+}
+
 }
