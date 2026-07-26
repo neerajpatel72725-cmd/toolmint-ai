@@ -5,16 +5,17 @@ export default function SearchBar({
   setCategory,
 }) {
   return (
-    <>
+    <div className="search-wrapper">
+
       <input
         className="search"
-        placeholder="Search AI tools..."
+        placeholder="🔍 Search AI tools..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
 
       <select
-        className="search"
+        className="search category-select"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       >
@@ -27,6 +28,7 @@ export default function SearchBar({
         <option>Voice AI</option>
         <option>Video AI</option>
       </select>
-    </>
+
+    </div>
   );
 }
