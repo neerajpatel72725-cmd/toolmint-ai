@@ -582,14 +582,24 @@ font-size:32px;
 .footer hr{
   border:none;
   border-top:1px solid #334155;
-  margin:25px auto;
+  margin:35px auto 20px;
   max-width:700px;
 }
+
+.copyright{
+  margin-top:20px;
+  color:#94a3b8;
+  font-size:14px;
+}
+
+
 
 .copyright{
   color:#94a3b8;
   font-size:14px;
 }
+
+
 
 @media(max-width:768px){
 
