@@ -9,14 +9,15 @@ export default function Footer() {
       </p>
 
       <div className="footer-links">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Privacy</a>
+       <a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#">Privacy</a>
+<a href="#">Terms</a> 
       </div>
-
       <p className="copyright">
-        © 2026 ToolMint AI • Made with a crazy person 
+  © 2026 GENORA AI. All Rights Reserved.
 </p>
+     
     </footer>
   );
 }
