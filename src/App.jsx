@@ -27,25 +27,29 @@ export default function App() {
     <>
       <nav className="navbar">
         <h2>🚀 GENORA AI</h2>
-
-        <div className="menu">
-          <a href="#">Home</a>
-          <a href="#">Trending</a>
-          <a href="#">Categories</a>
-          <a href="#">About</a>
-        </div>
+      <div className="menu">
+  <a href="#home">Home</a>
+  <a href="#tools">Trending</a>
+  <a href="#categories">Categories</a>
+  <a href="#about">About</a>
+</div>
+        
       </nav>
 
       <div className="container">
         
 
-        <Hero totalTools={filtered.length} />
+        <div id="home">
+  <Hero totalTools={filtered.length} />
+</div>
 
         
-        <Categories
-          setCategory={setCategory}
-          setSearch={setSearch}
-        />
+       <div id="categories">
+  <Categories
+    setCategory={setCategory}
+    setSearch={setSearch}
+  />
+</div>
 
         <SearchBar
           search={search}
@@ -54,7 +58,7 @@ export default function App() {
           setCategory={setCategory}
         />
 
-        <div className="grid">
+        <div id="tools" className="grid">
           {filtered.map((tool) => (
             <ToolCard
               key={tool.name}
@@ -63,7 +67,9 @@ export default function App() {
           ))}
         </div>
 
-        <Footer />
+        <div id="about">
+  <Footer />
+</div>
       </div>
     </>
   );
