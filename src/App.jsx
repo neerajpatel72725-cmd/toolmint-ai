@@ -37,9 +37,7 @@ export default function App() {
       </nav>
 
       <div className="container">
-        <h1>Find the Best AI Tools</h1>
-
-        <p>Discover powerful AI tools in one place.</p>
+        
 
         <Hero totalTools={filtered.length} />
 
