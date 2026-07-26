@@ -1,18 +1,35 @@
 export default function ToolCard({ tool }) {
   return (
     <div className="card">
+
       <div className="tool-header">
-        <img src={tool.logo} alt={tool.name} width="40" />
-        <h2>{tool.name}</h2>
+        <img
+          src={tool.logo}
+          alt={tool.name}
+          className="tool-logo"
+        />
+
+        <div>
+          <h2>{tool.name}</h2>
+          <p className="tool-category">
+            {tool.category}
+          </p>
+        </div>
       </div>
 
       <div className="badges">
-        <span>⭐ {tool.rating}</span>
-        <span>{tool.type}</span>
+        <span className="rating">
+          ⭐ {tool.rating}
+        </span>
+
+        <span className="type">
+          {tool.type}
+        </span>
       </div>
 
-      <p>{tool.category}</p>
-      <p className="description">{tool.description}</p>
+      <p className="description">
+        {tool.description}
+      </p>
 
       <a
         href={tool.link}
@@ -20,9 +37,10 @@ export default function ToolCard({ tool }) {
         rel="noreferrer"
       >
         <button className="btn">
-          Visit Tool
+          🚀 Visit Tool
         </button>
       </a>
+
     </div>
   );
 }
