@@ -1,23 +1,27 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <h3>🚀 GENORA AI</h3>
+
+      <h2>🚀 GENORA AI</h2>
 
       <p>
         Discover the best AI tools for creators,
-        developers and businesses.
+        developers, students and businesses.
       </p>
 
       <div className="footer-links">
-       <a href="#">About</a>
-<a href="#">Contact</a>
-<a href="#">Privacy</a>
-<a href="#">Terms</a> 
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
       </div>
+
+      <hr />
+
       <p className="copyright">
-  © 2026 GENORA AI. All Rights Reserved.
-</p>
-     
+        © 2026 GENORA AI • All Rights Reserved.
+      </p>
+
     </footer>
   );
 }
