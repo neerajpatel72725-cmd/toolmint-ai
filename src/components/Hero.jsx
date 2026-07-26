@@ -1,35 +1,36 @@
 export default function Hero({ totalTools }) {
   return (
-    <>
-      <div className="hero">
-        <h2>🚀 AI Tools for Creators</h2>
+    <section className="hero">
+      <div className="hero-content">
+        <h1>🚀 Discover the Best AI Tools</h1>
 
         <p>
-          Discover the best AI tools for YouTube, Instagram,
-          Thumbnails, Posters, Video Editing and Coding.
+          Explore powerful AI tools for Coding, Design,
+          Writing, Video Editing, Research and Productivity —
+          all in one place.
         </p>
 
-        <button className="btn">Explore AI Tools</button>
-      </div>
+        <button className="btn">
+          Explore AI Tools
+        </button>
 
-      <div className="hero">
-        <h2>💡 Why GENORA AI ?</h2>
+        <div className="hero-stats">
+          <div className="stat">
+            <h3>{totalTools}+</h3>
+            <span>AI Tools</span>
+          </div>
 
-        <p>
-          Save hours by discovering the best AI tools for content creation,
-          design, coding, research and productivity — all in one place.
-        </p>
+          <div className="stat">
+            <h3>🔥</h3>
+            <span>Trending</span>
+          </div>
 
-        <div className="badges">
-          <span>⚡ Fast Search</span>
-          <span>🔥 Trending Tools</span>
-          <span>🎯 Creator Friendly</span>
+          <div className="stat">
+            <h3>⚡</h3>
+            <span>Free & Paid</span>
+          </div>
         </div>
       </div>
-
-      <p>
-        <strong>{totalTools}</strong> AI Tools Found
-      </p>
-    </>
+    </section>
   );
 }
