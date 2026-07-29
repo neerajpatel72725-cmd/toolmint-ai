@@ -2,7 +2,7 @@ import { useState } from "react";
 import tools from "./data/tools";
 
 import Hero from "./components/Hero";
-
+import OurAITools from "./components/OurAITools";
 import Categories from "./components/Categories";
 import SearchBar from "./components/SearchBar";
 import ToolCard from "./components/ToolCard";
@@ -41,6 +41,7 @@ export default function App() {
 
         <div id="home">
   <Hero totalTools={filtered.length} />
+<OurAITools />
 </div>
 
         
