@@ -17,17 +17,30 @@ export default function ThumbnailGenerator() {
 
         <select className="search">
           <option>YouTube</option>
+          <option>Instagram</option>
+          <option>Facebook</option>
+        </select>
+
+        <br /><br />
+
+        <select className="search">
           <option>Gaming</option>
+          <option>Business</option>
           <option>Tech</option>
-          <option>Finance</option>
           <option>Education</option>
         </select>
 
         <br /><br />
 
         <button className="btn">
-          🚀 Generate Thumbnail
+          🎨 Generate Thumbnail
         </button>
+
+        <br /><br />
+
+        <div className="creator-preview">
+          Preview will appear here
+        </div>
 
       </div>
 
