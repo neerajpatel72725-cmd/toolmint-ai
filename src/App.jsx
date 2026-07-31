@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import OurAITools from "./components/OurAITools";
 import Categories from "./components/Categories";
 import AICreatorStudio from "./components/AICreatorStudio";
+import ThumbnailGenerator from "./ThumbnailGenerator";
 import SearchBar from "./components/SearchBar";
 import ToolCard from "./components/ToolCard";
 import Footer from "./components/Footer";
@@ -43,6 +44,7 @@ export default function App() {
         <div id="home">
   <Hero totalTools={filtered.length} />
 <AICreatorStudio />
+<ThumbnailGenerator />
 <OurAITools />
 </div>
 
