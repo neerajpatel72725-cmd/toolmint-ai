@@ -57,7 +57,7 @@ const handleGenerate = async () => {
 
         <br /><br />
 
-        <<button
+        <button
   className="btn"
   onClick={handleGenerate}
 >
@@ -65,7 +65,7 @@ const handleGenerate = async () => {
 </button>
         <br /><br />
 
-        <<div className="creator-preview">
+        <div className="creator-preview">
   {image ? (
     <img
       src={image}
