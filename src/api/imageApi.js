@@ -14,9 +14,11 @@ export async function generateImage(prompt) {
   );
 
   if (!response.ok) {
-    throw new Error("Image generation failed");
-  }
-
+  const error = await response.text();
+  console.log(error);
+  alert(error);
+  throw new Error(error);
+}
   const blob = await response.blob();
   return URL.createObjectURL(blob);
 }
