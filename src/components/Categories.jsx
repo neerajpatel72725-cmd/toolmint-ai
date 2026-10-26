@@ -1,37 +1,38 @@
 export default function Categories({ setCategory, setSearch }) {
+  const chooseCategory = (category) => {
+    setSearch("");
+    setCategory(category);
+    document.getElementById("tools")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const categories = [
+    { name: "YouTube AI", icon: "🎥" },
+    { name: "Design AI", icon: "🎨" },
+    { name: "Coding AI", icon: "💻" },
+    { name: "Video AI", icon: "🎬" },
+    { name: "Voice AI", icon: "🎤" },
+    { name: "Research AI", icon: "🔎" },
+    { name: "Writing AI", icon: "✍️" },
+    { name: "Image AI", icon: "🖼️" },
+  ];
+
   return (
-    <section className="categories">
-
-      <div className="category-card" onClick={() => setCategory("YouTube AI")}>
-        <span className="category-icon">🎥</span>
-        <h4>YouTube AI</h4>
-      </div>
-
-      <div className="category-card" onClick={() => setCategory("Design AI")}>
-        <span className="category-icon">🎨</span>
-        <h4>Design AI</h4>
-      </div>
-
-      <div className="category-card" onClick={() => setSearch("ChatGPT")}>
-        <span className="category-icon">🤖</span>
-        <h4>ChatGPT</h4>
-      </div>
-
-      <div className="category-card" onClick={() => setCategory("Coding AI")}>
-        <span className="category-icon">💻</span>
-        <h4>Coding AI</h4>
-      </div>
-
-      <div className="category-card" onClick={() => setCategory("Video AI")}>
-        <span className="category-icon">🎬</span>
-        <h4>Video AI</h4>
-      </div>
-
-      <div className="category-card" onClick={() => setCategory("Voice AI")}>
-        <span className="category-icon">🎤</span>
-        <h4>Voice AI</h4>
-      </div>
-
+    <section className="categories" aria-label="AI tool categories">
+      {categories.map((category) => (
+        <button
+          type="button"
+          className="category-card"
+          key={category.name}
+          onClick={() => chooseCategory(category.name)}
+        >
+          <span className="category-icon" aria-hidden="true">
+            {category.icon}
+          </span>
+          <h4>{category.name}</h4>
+        </button>
+      ))}
     </section>
   );
 }
