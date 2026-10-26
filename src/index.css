@@ -244,3 +244,116 @@ button{
   font-size:13px;
   font-weight:bold;
 }
+
+/* Mobile Responsive Improvements */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  max-width: 100%;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 50px);
+  line-height: 1.2;
+}
+
+.creator-studio h2,
+.our-ai-tools h2 {
+  font-size: clamp(25px, 4vw, 38px);
+}
+
+.creator-grid,
+.ai-grid,
+.grid {
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+}
+
+.creator-card,
+.ai-card {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .navbar {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .hero {
+    margin: 20px 0;
+    padding: 35px 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .creator-grid,
+  .ai-grid,
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .creator-card,
+  .ai-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding: 12px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+}
